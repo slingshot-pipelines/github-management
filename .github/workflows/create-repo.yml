@@ -44,7 +44,7 @@ jobs:
           GH_TOKEN: ${{ steps.fetch-app-token.outputs.token }}
         run: |
           echo "::group::Generate repository"
-          gh api /repos/${{ github.repository_owner }}/template/generate \
+          gh api /repos/${{ github.repository_owner }}/github-template/generate \
             -X POST \
             -H "Accept: application/vnd.github+json" \
             -F "owner=${{ github.repository_owner }}" \
