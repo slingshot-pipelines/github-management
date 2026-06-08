@@ -43,5 +43,5 @@ rules:
       # Require checks to pass on the latest commit
       strict_required_status_checks_policy: true
       required_status_checks: 
-        - context: "pr / pr-ready"
+        - context: "pr-ready"
       do_not_enforce_on_create: true
